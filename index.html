@@ -3,76 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Open AI Build Challenge | 2026</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>AI Build Contest</title>
+    <!-- Pixelated Font for Minecraft Vibe -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #121212;
+            --card-bg: #1e1e1e;
+            --border-color: #333333;
+            --text-main: #e0e0e0;
+            --text-muted: #888888;
+            --accent-green: #55ff55;
+            --accent-gold: #ffaa00;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Press Start 2P', monospace;
+            color: var(--accent-green);
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            line-height: 1.4;
+            text-shadow: 3px 3px #000;
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 1rem;
+        }
+
+        section {
+            background-color: var(--card-bg);
+            border: 2px solid var(--border-color);
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 4px 4px 0px #000;
+        }
+
+        section h2 {
+            font-size: 1rem;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        p, ul {
+            margin-bottom: 15px;
+            color: var(--text-main);
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        .btn-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .btn {
+            font-family: 'Press Start 2P', monospace;
+            background-color: var(--accent-green);
+            color: #121212;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 0.8rem;
+            border: 2px solid #000;
+            box-shadow: 4px 4px 0px #fff;
+            display: inline-block;
+            transition: transform 0.1s ease, box-shadow 0.1s ease;
+        }
+
+        .btn:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0px #fff;
+        }
+
+        .btn:active {
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0px #fff;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            color: var(--text-muted);
+            font-size: 0.8rem;
+            font-family: 'Press Start 2P', monospace;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.2rem;
+            }
+            section {
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
-<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-white">
+<body>
 
-    <!-- Hero Section -->
-    <header class="max-w-4xl mx-auto px-6 py-20 text-center">
-        <span class="inline-block bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 text-xs font-semibold px-3 py-1 rounded-full mb-6 uppercase tracking-wider">
-            Virtual Hackathon • Free Entry
-        </span>
-        <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-6">
-            Open AI Build <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Challenge</span>
-        </h1>
-        <p class="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto mb-10">
-            A 48-hour sprint for builders to create open-source AI agents and RAG applications. Zero fees, global reach, real community impact.
-        </p>
-        <div class="flex flex-col sm:flex-row justify-center gap-4">
-            <!-- Replace with your Google Form / Tally URL -->
-            <a href="YOUR_REGISTRATION_LINK_HERE" target="_blank" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold px-8 py-3.5 rounded-xl transition shadow-lg shadow-cyan-500/20">
-                Register Now
-            </a>
-            <a href="#details" class="bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-300 font-medium px-8 py-3.5 rounded-xl transition">
-                View Details
-            </a>
-        </div>
-    </header>
+    <div class="container">
+        <!-- Hero Section -->
+        <header>
+            <h1>[AI BUILD CONTEST]</h1>
+            <p>Crafting the future, block by block.</p>
+        </header>
 
-    <!-- Details Section -->
-    <main id="details" class="max-w-3xl mx-auto px-6 py-12 space-y-16">
-        
-        <!-- Timeline -->
-        <section class="bg-slate-900/50 border border-slate-800/80 rounded-2xl p-8 backdrop-blur">
-            <h2 class="text-2xl font-bold mb-6 text-cyan-400">Timeline & Deadlines</h2>
-            <ul class="space-y-4 text-slate-300">
-                <li class="flex justify-between border-b border-slate-800 pb-3">
-                    <span class="font-medium">Registrations Open</span>
-                    <span class="text-slate-400">Right Now</span>
-                </li>
-                <li class="flex justify-between border-b border-slate-800 pb-3">
-                    <span class="font-medium">Kickoff & Starter Kit Drop</span>
-                    <span class="text-slate-400">Friday, 6:00 PM UTC</span>
-                </li>
-                <li class="flex justify-between border-b border-slate-800 pb-3">
-                    <span class="font-medium">Submission Deadline</span>
-                    <span class="text-slate-400">Sunday, 6:00 PM UTC</span>
-                </li>
-                <li class="flex justify-between">
-                    <span class="font-medium">Winners Announced</span>
-                    <span class="text-slate-400">Following Tuesday</span>
-                </li>
+        <!-- About Section -->
+        <section>
+            <h2>// 01. About the Event</h2>
+            <p>Welcome to the ultimate AI building arena. Gather your tools, spark your creativity, and construct something extraordinary using artificial intelligence.</p>
+            <p>Whether you're building autonomous agents, creative pipelines, or intelligent utilities, this is your canvas.</p>
+        </section>
+
+        <!-- Timeline / Details Section -->
+        <section>
+            <h2>// 02. Details & Rules</h2>
+            <ul>
+                <li><strong>Start Date:</strong> [Insert Date]</li>
+                <li><strong>End Date:</strong> [Insert Date]</li>
+                <li><strong>Team Size:</strong> 1-4 Players</li>
+                <li><strong>Submission:</strong> GitHub Repository + Demo Link</li>
             </ul>
         </section>
 
-        <!-- What to Build -->
-        <section class="space-y-4">
-            <h2 class="text-2xl font-bold text-cyan-400">The Challenge</h2>
-            <p class="text-slate-300 leading-relaxed">
-                Participants will leverage open-source models, local LLM tooling (like Ollama), or agentic frameworks to build functional applications that solve real-world problems. 
-            </p>
-            <p class="text-slate-300 leading-relaxed">
-                Need a head start? Check out our official <a href="YOUR_GITHUB_STARTER_REPO_LINK" target="_blank" class="text-cyan-400 underline underline-offset-4">GitHub Starter Kit</a> containing boilerplate architecture and evaluation scripts.
-            </p>
-        </section>
+        <!-- Call to Action -->
+        <div class="btn-container">
+            <a href="[Insert Registration Link]" class="btn">JOIN CONTEST</a>
+        </div>
 
         <!-- Footer -->
-        <footer class="text-center pt-12 pb-20 border-t border-slate-900 text-slate-500 text-sm">
-            <p>Built by student developers, for student developers.</p>
+        <footer>
+            <p>&copy; 2026 AI Build Contest. All rights reserved.</p>
         </footer>
-
-    </main>
+    </div>
 
 </body>
 </html>
